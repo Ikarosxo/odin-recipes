@@ -1,11 +1,13 @@
-h1{
+.title{
     font-family: 'Trebuchet MS', sans-serif;
     text-align: center;
-    font-size: 40px;
+    font-size: 25px;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .description, .ingredients, .steps {
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     margin-left: 250px;
     margin-right: 250px;
@@ -26,7 +28,6 @@ h1{
     padding: 15px 30px;
     text-align: center;
     text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 .footer a:hover{
@@ -35,11 +36,15 @@ h1{
 
 .navbar ul{
     overflow: hidden;
-    background-color: rgb(170, 41, 41);
+    background-color: rgb(72, 60, 60);
     list-style-type: none;
     margin: 0;
     padding: 0;
+    position: sticky;
   }
+.navbar li {
+    border-right: 1px solid #bbb;
+}
   
   .navbar a {
     float: left;
@@ -50,7 +55,11 @@ h1{
     text-decoration: none;
   }
   
-  .navbar a:hover {
-    background-color: rgb(255, 156, 156);
+  .navbar a:hover:not(.active) {
+    background-color: rgb(221, 134, 134);
     color: black;
+  }
+
+  .active{
+    background-color: rgb(184, 54, 54);
   }
