@@ -1,11 +1,14 @@
 .title{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: rgb(72, 60, 60);
     color: white;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center; 
+}
+
+.header{
+  background-color: #6a040f;
 }
 body{
     font-family: Arial, Helvetica, sans-serif;
@@ -43,7 +46,6 @@ body{
 
 .navbar ul{
     overflow: hidden;
-    background-color: rgb(72, 60, 60);
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -63,15 +65,36 @@ body{
   }
   
   .navbar a:hover:not(.active) {
-    background-color: rgb(221, 134, 134);
-    color: black;
+    background-color: #e85d04;
+    color: white;
   }
 
   .active{
-    background-color: rgb(184, 54, 54);
+    background-color: #d00000;
   }
 
   .icon{
     width: 64px;
     height: auto;
+  }
+
+  .homeimg{
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .home {
+    position: relative;
+  }
+  
+  .welcome {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 20px;
   }
