@@ -1,7 +1,11 @@
 .title{
-    font-family: 'Trebuchet MS', sans-serif;
-    text-align: center;
-    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(72, 60, 60);
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
 }
 body{
     font-family: Arial, Helvetica, sans-serif;
@@ -9,16 +13,19 @@ body{
 
 .description, .ingredients, .steps {
     font-size: 20px;
-    margin-left: 250px;
-    margin-right: 250px;
+    margin-left: 100px;
+    margin-right: 100px;
+    justify-content: center;
+    align-items: center; 
 }
 
 .imagen {
     text-align: center;
+    width: 100%;
 }
 
 .imagen img{
-    width: 800px;
+    width: 100%;
     height: auto;
 }
 
@@ -62,4 +69,9 @@ body{
 
   .active{
     background-color: rgb(184, 54, 54);
+  }
+
+  .icon{
+    width: 64px;
+    height: auto;
   }
